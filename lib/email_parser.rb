@@ -13,6 +13,7 @@ class EmailAddressParser
   end 
   
   def parse 
+  if !@email.include?(@email)
     @email.tr(",", " ").split 
   end 
   
