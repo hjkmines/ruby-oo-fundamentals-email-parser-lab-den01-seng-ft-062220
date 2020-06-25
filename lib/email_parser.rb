@@ -12,10 +12,8 @@ class EmailAddressParser
     @email = email
   end 
   
-  def parse 
-  if !@email.include?(@email)
-    @email.tr(",", " ").split 
-  end 
+  def parse
+    @email.tr(",", " ").split.uniq 
   end 
   
   
