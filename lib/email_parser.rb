@@ -16,6 +16,7 @@ class EmailAddressParser
   if !@email.include?(@email)
     @email.tr(",", " ").split 
   end 
+  end 
   
   
 end 
