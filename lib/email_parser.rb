@@ -13,7 +13,6 @@ class EmailAddressParser
   end 
   
   def parse 
-    new_array = []
     if @email.include?(",")
       @email.split
     else 
