@@ -13,7 +13,7 @@ class EmailAddressParser
   end 
   
   def parse
-    @email.tr(",", " ").split.uniq 
+    @email.uniq.tr(",", " ").split 
   end 
   
   
